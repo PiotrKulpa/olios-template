@@ -1,0 +1,16 @@
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  color: grey;
+  background-color: $background; 
+}
+
+.testdiv {
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+p {
+  font-weight: 300;
+  font-style: italic;
+}

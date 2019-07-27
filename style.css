@@ -1,0 +1,25 @@
+/* COLORS */
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  color: grey;
+  background-color: #f0f0f0; }
+
+.testdiv {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap; }
+
+p {
+  font-weight: 300;
+  font-style: italic; }
+
+
+/*# sourceMappingURL=style.css.map*/
