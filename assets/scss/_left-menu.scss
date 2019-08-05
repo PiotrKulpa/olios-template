@@ -1,0 +1,68 @@
+#left-menu {
+  position: fixed;
+  background-color: $lightest;
+  @include flexbox-container('column', 140px, 100vh, wrap, flex-start, flex-start, flex-start);
+
+  &.left-menu {
+    transform: translate(-140px, 0);
+    transition: 0.5s ease-in-out;
+
+    .left-menu-logo {
+      transform: translate(140px, 0);
+      transition: 0.5s ease-in-out;
+    }
+  }
+
+  &.left-menu:hover {
+    transform: translate(0, 0);
+    transition: 0.5s ease-in-out;
+
+    .left-menu-logo {
+      transform: translate(0, 0);
+      transition: 0.5s ease-in-out;
+    }
+  }
+
+  .left-menu-item {
+    @include flexbox(center, 'column', 140px, 50px, wrap, center, center, center)
+  }
+
+  .left-menu-middle-wrapper {
+    height: 70vh;
+
+    .left-menu-item {
+      padding-top: 55px;
+    }
+  }
+  
+  .left-menu-logo, .left-menu-bottom {
+    height: 15vh;
+  }
+
+  .left-menu-middle-wrapper {
+    align-content: flex-start;
+  }
+
+  .left-menu-logo {
+    align-content: flex-start;
+  }
+
+  .left-menu-bottom {
+    align-content: flex-end;
+  }
+
+  .left-menu-item {
+    padding: 30px;
+  }
+
+  @media only screen and (min-width: $desktop) {
+      &.left-menu {
+        transform: translate(0, 0);
+        transition: 0.5s ease-in-out;
+    
+        .left-menu-logo {
+          transform: translate(0, 0);
+        }
+      }
+    } 
+}
