@@ -1,17 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css'/>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.5.0/modern-normalize.min.css'/>
-  <link rel='stylesheet' href='./style.css'/>
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap"
+    rel="stylesheet">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css' />
+  <link rel='stylesheet'
+    href='https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.5.0/modern-normalize.min.css' />
+  <link rel='stylesheet' href='./style.css' />
 </head>
+
 <body>
-  
+
+  <!-- Homepage -->
+  <section id="home">
+    <main>
+      <h1>OLIOS</h1>
+      <p>newest furniture shop</p>
+      <button>view more</button>
+    </main>
+  </section>
+
   <!-- Left menu -->
   <section id="left-menu" class="left-menu">
     <div class="left-menu-logo left-menu-item"><img src="./assets/images/left-menu/CIRCLE.png" alt="logo"></div>
@@ -25,34 +38,40 @@
 
   <!-- Right menu -->
   <section id="right-menu" class="right-menu">
+    <div class="right-menu-button-box"></div>
     <div class="right-menu-categories">
-      <div class="living-room">
-        <img src="./assets/images/right-menu/living-room.svg" alt="living room">
+      <div class="living-room right-menu-item">
+        <p class="right-menu-text">Living room</p><img src="./assets/images/right-menu/living-room.svg"
+          alt="living room">
       </div>
-      <div class="office">
-        <img src="./assets/images/right-menu/office.svg" alt="">
+      <div class="office right-menu-item">
+        <p class="right-menu-text">Office</p><img src="./assets/images/right-menu/office.svg" alt="office">
       </div>
-      <div class="kids">
-        <img src="./assets/images/right-menu/for-kids.svg" alt="">
+      <div class="kids right-menu-item">
+        <p class="right-menu-text">For kids</p><img src="./assets/images/right-menu/for-kids.svg" alt="kids">
       </div>
-      <div class="kitchen">
-        <img src="./assets/images/right-menu/kitchen.svg" alt="">
+      <div class="kitchen right-menu-item">
+        <p class="right-menu-text">Kitchen</p><img src="./assets/images/right-menu/kitchen.svg" alt="kitchen">
       </div>
-      <div class="accesories">
-        <img src="./assets/images/right-menu/accessories.svg" alt="">
+      <div class="accesories right-menu-item">
+        <p class="right-menu-text">Accesories</p><img src="./assets/images/right-menu/accessories.svg" alt="accesories">
       </div>
     </div>
-    <div class="right-menu-bottom"></div>
+    <div class="right-menu-bottom">
+      <p>Show all categories</p>
+    </div>
   </section>
 
   <!-- Right menu button -->
-  <section id="right-menu-button" class="right-menu-button">
-    <div class="right-menu-button-wrapper">
-      <img src="" alt="">
-    </div>
+  <section class="right-menu-button">
+    <button id="right-menu-button" type="button" class="tcon tcon-menu--xcross" aria-label="toggle menu">
+      <span class="tcon-menu__lines" aria-hidden="true"></span>
+      <span class="tcon-visuallyhidden">toggle menu</span>
+    </button>
   </section>
 
   <script src='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/js/all.min.js'></script>
   <script src='./index.js'></script>
 </body>
+
 </html>

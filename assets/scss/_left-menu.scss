@@ -1,5 +1,6 @@
 #left-menu {
   position: fixed;
+  top: 0;
   background-color: $lightest;
   @include flexbox-container('column', 140px, 100vh, wrap, flex-start, flex-start, flex-start);
 

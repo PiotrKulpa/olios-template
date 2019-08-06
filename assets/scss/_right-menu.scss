@@ -1,7 +1,43 @@
 #right-menu {
-  width: 370px;
   background-color: $lightest;
-  height: 100vh;
   position: fixed;
+  top: 0;
   right: 0;
+  @include flexbox-container(column, 370px, 100vh, wrap, flex-start, center, center);
+
+  &.right-menu {
+    transform: translate(370px, 0);
+    transition: 0.5s ease-in-out;
+
+    &.active-menu {
+      transform: translate(0, 0);
+      transition: 0.5s ease-in-out;
+    }
+  }
+  
+  .right-menu-button-box {
+    height: 87px;
+    margin-top: 78px;
+  }
+
+  .right-menu-categories {
+    @include flexbox-container(column, 50%, 80vh, wrap, center, center, center);
+  }
+
+  .right-menu-bottom {
+    @include flexbox-container(column, 50%, 10px, wrap, flex-end, center, center);
+  }
+
+  .right-menu-item {
+    @include flexbox-container(row, 100%, 50px, no-wrap, flex-end, center, center);
+    margin: 35px 0;
+
+    img {
+      max-width: 30px;
+    }
+  }
+
+  .right-menu-text {
+    padding-right: 15px;
+  }
 }

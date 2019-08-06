@@ -1,0 +1,12 @@
+#home {
+  position: relative;
+  background-image: url(../images/home/home-photo.jpg);
+  background-size: contain;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+
+  h1, p, button {
+    text-align: center;
+  }
+}
