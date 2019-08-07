@@ -1,12 +1,28 @@
 #home {
   position: relative;
   background-image: url(../images/home/home-photo.jpg);
-  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
   width: 100vw;
   height: 100vh;
 
+  main {
+    padding-top: 100px;
+   text-align: center;
+  }
+
   h1, p, button {
     text-align: center;
+  }
+
+  .sub-header {
+    font-size: 36px;
+    font-style: normal;
+    letter-spacing: 1px;
+    color: $darkest;
+    font-weight: 300;
+    text-align: center;
+    padding: 15px;
   }
 }
